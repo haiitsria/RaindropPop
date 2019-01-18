@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto:300,400,700|Montserrat:300,400,600');
+ 
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.brand-logo {
+    display: inline-block;
+    height: 100%;
+}
+
+.brand-logo img {
+    height: 64px;
+}
+
+.nav-wrapper {
+	color: #ff715b;
+}
+
+
+.plusbtn {
+    color: #000000; 
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.readmore{
+    display: none; /* Hidden by default */    
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    float: right;
+    margin-right: 20px;
+    margin-top: -30px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+/* Ben */
+
+
+
+/*============================== GENERAL RULES ==============================*/
+/*BODY*/
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%
+    background-color: #F0F7EE;
+}
+
+
+
+
+
+/*====================================Category Page Stuff======================================*/
+
+.toparea_cat{
+    width: 100%;
+    background-color: #5FDD99;
+}
+
+.cat_top_pic{
+    width: 100%;
+        margin-bottom: -23px;
+}
+
+.cat_top_pic img{
+    width: 100%;
+}
+
+.cat_header {
+    width: 100%;
+}
+
+.cat_abouttxt{
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: left;
+}
+
+.cat_name_h2{
+    text-align: center;
+    color: #FFF;
+    font-size: 24pt;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.cats{
+    margin-top: 90px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.bigcat{
+    max-width: 100%;
+    margin: 0px 0px 0px 0px;
+    margin-bottom: -4px;
+}
+
+.cattext{
+    margin: 40px 40px 0px 40px;
+    text-align: justify;
+    color: #000;
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.catright{
+    width: 50%;
+    float: right;
+}
+
+.catleft{
+    width: 50%;
+    float: left;
+}
+
+.cat_title{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 32pt;
+}
+
+.grouppic{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.grouppic img{
+    width: 100%;
+}
+
+
+/*=========================Text Overlays on the category images==========================*/
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered a{
+    text-decoration: none;
+}
+
+/*============================== PRODUCTS PAGE ==============================*/
+.toparea{
+    background-color: #5FDD99;
+}
+
+.shorttext{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    width: 840px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #000;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+.productarea{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F0F7EE;
+}
+
+/* CARDS */
+
+/*GRID*/
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+    margin: auto;
+}
+/* END OF GRID */
+
+.view {
+    width: 100%;
+    background-color: #e1efdd;
+    color: #0E2E33;
+    border: none;
+    padding: 5px 5px 5px 5px;
+}
+ 
+.view:hover {
+    background-color: #FFF;
+}
+ 
+.button {
+    background-color: #F7EE7F;
+    color: #0E2E33;
+    border-style: none;
+    padding: 5px 30px 5px 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+ 
+.button:hover {
+    background-color: #F7EE7F;
+}
+
+.item {
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    background: #FFF;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item2 {
+    width: 250px;
+    text-align: center;
+    background: #0E2E33;
+}
+
+.name {
+    height: 50px;
+    font-size: 18px;
+    max-width: 350px;
+    margin-bottom: 18px;
+}
+ 
+.price {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ctgry {
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.ctgry p{
+    margin-bottom: 10px;
+}
+
+.ctgry a {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+ 
+.descrip {
+    height: 140px;
+    font-size: 12px;
+}
+
+.searchresult{
+    text-align: center;
+    font-size: 16pt;
+}
+
+/*============================== ITEM PAGE ==============================*/
+
+.productdetail{
+    height: 900px;
+    margin-top: 63px;
+    padding-top: 100px;
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 770px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+
+input[type=submit]{
+    background-color: #5FDD99;
+    color: #FFF;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #5FDD99;
+    color: #FFF;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.pass {
+    margin-left: 10px;
+    margin-top: 20px;
+    float: right;
+}
+
+
+.addbtn{
+    margin-top: 60px;
+    width: 200px;
+}
+
+#rmbr{
+margin-left: 20px;
+}
+
+
+
+
+/*============================== Featured Item ==============================*/
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* New User */
+
+#userHint, #passHint, #verifyHint, #phoneHint, #emailHint, #addressHint {
+    display: none;
+}
+
+.hints{
+    font-size: 10pt;
+    margin-left: 20px;
+}
+
+#checkimg, #checkimg2, #checkimg3, #checkimg4, #checkimg5, #checkimg6{
+    float: right;
+    margin-right: 15px;
+    margin-top: -46px;
+    display: inline;
+}
+
+#checkimg img, #checkimg2 img, #checkimg3 img, #checkimg4 img, #checkimg5 img, #checkimg6 img{
+    margin-bottom: 0px;
+}
+
+#signup{
+    /*border: 1px solid #333333;*/
+    width: 800px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#signup input[type=text], #signup input[type=password]{
+    font-size: 14pt;
+    margin-left: 20px;
+    width: 720px;
+}
